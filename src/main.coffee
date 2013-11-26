@@ -1,7 +1,9 @@
 
 
-Mod = require('./module.coffee')
-mod = new Mod()
+Coder = require('./coder.coffee')
+coder = new Coder()
 
-console.log mod.name
-console.log mod.when()
+console.log "No name is set, it outputs: #{coder.getName()}"
+coder.setName('gihuber')
+console.log "Name is set to: #{coder.getName()}"
+console.log coder.canCommit
